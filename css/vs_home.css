@@ -211,6 +211,7 @@ height: 100%;
 	background-color:#5987e5;
 	border-bottom: 2px solid #fff;
 	padding: 10px;
+	text-align: justify;
 }
 
 .block-contact-mini > .titel > p:nth-child(1){

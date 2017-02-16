@@ -296,6 +296,48 @@
 		width: 100%;
 	}
 
+
+	body {
+		font-size: 14px;
+	}
+
+
+	.page-title > div,
+	.wrapper-home,
+	.wrapper-oborudovanie {
+		margin: 0 5px;
+	}
+
+
+	.page-title > div > p {
+		margin: 0 0 0 8px;
+	}
+
+	h2,
+	.screen-frond  .titel > h2,
+	.screen-water-frond .titel > h2,
+	.page-title > div > p,
+	.block-contact-mini > .titel > p:nth-child(1),
+ {
+		font-size: 30px;
+	}
+
+	.block-contact-mini > .ico > div > p:nth-child(2),
+	.wrapper-tabs > .tabs,
+	.block-info-contact > dt	{
+		font-size: 24px;
+	}
+
+	.icon-contact {
+		width: 18px;
+		height: 18px;
+	}
+
+	.block-contact-mini > .ico > div {
+		padding: 15px 20px;
+	}
+
+
 }
 /***************************************************************/
 
