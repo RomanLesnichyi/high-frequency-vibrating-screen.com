@@ -28,12 +28,12 @@
 
 
 
-				<ul class="nav navbar-nav navbar-right menu-lng">
+<!--				<ul class="nav navbar-nav navbar-right menu-lng">
                     <div class="titel"></div>
                     <li class="ru"><a href="../navbar/">RU</a></li>
                     <li class="ua active"><a href="../navbar-static-top/">UA</a></li>
                     <li class="us"><a href="../navbar/">US</a></li>
-                </ul>
+                </ul>-->
 
 			</div><!--/.nav-collapse -->
 		</div>

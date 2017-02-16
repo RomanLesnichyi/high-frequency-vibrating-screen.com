@@ -7,25 +7,38 @@
 	h2 {
 		font-size: 40px
 	}
-	.block-contact-mini > .titel > h5{
-		font-size: 50px;
+
+	.block-contact-mini > .titel > p:nth-child(1) {
+		font-size: 40px;
 	}
 
-	.block-contact-mini > .ico > div> h5 {
-		font-size: 30px;
+	.block-contact-mini > .ico > div > p:nth-child(2) {
+		font-size: 40px;
 	}
 
-	.screen-frond  .menu li, .screen-frond  .menu li>a {
+	.icon-contact {
+		width: 34px;
+		height: 34px;
+	}
+
+	.screen-frond .menu li, .screen-frond .menu li > a {
 		font-size: 18px;
 	}
 
+	.contact-form-submit {
+		font-size: 26px;
+	}
 
-.nav.menu-section>li>a {
-	font-size:26px;
-	padding: 15px 10px 15px 10px;
-}
+	.block-info-contact > dt {
+		font-size: 34px;
+	}
 
-.screen-frond  .menu li.indent {
+	.nav.menu-section > li > a {
+		font-size: 26px;
+		padding: 15px 10px 15px 10px;
+	}
+
+	.screen-frond .menu li.indent {
 		margin: 0 5px 0 5px;
 	}
 
@@ -36,39 +49,61 @@
 
 @media (max-width: 979px) { /* 960 x 640 iPhone 4*/
 /***************************************************************/
-.wrapper-mainmenu {
-	max-width: 450px;
-	margin-left: 55px;
-}
-.nav.menu-section>li>a {
-	border-right: 0px;
-}
-
-.nav.menu-lng>li>a,  .nav.menu-lng>li>a:hover  {
-	background: url('../images/bg_none.gif');
-}
-
-.menu-lng >.titel{ width:100%; border-top: 2px dotted   #304658; padding:10px 10px 0 10px; font-weight:900; color:#fff;}
-.menu-lng >.titel:after {  content:"Language"; }
-.nav.menu-lng>li {  width: 40px; float:left;}
+	.wrapper-mainmenu {
+		max-width: 450px;
+		margin-left: 55px;
+	}
 
 
+	.block-contact-mini > .ico > div > p:nth-child(2) {
+		font-size: 30px;
+	}
 
-.block-contact-mini {
-	max-width: 768px;
-}
+	.block-info-contact > dt {
+		font-size: 30px;
+	}
 
+	.contact-form-submit {
+		font-size: 24px;
+	}
 
+	.nav.menu-section > li > a {
+		border-right: 0px;
+		font-size: 24px;
+	}
 
+	.nav.menu-lng > li > a, .nav.menu-lng > li > a:hover {
+		background: url('../images/bg_none.gif');
+	}
 
-	.screen-frond  .text {
+	.menu-lng > .titel {
+		width: 100%;
+		border-top: 2px dotted #304658;
+		padding: 10px 10px 0 10px;
+		font-weight: 900;
+		color: #fff;
+	}
+
+	.menu-lng > .titel:after {
+		content: "Language";
+	}
+
+	.nav.menu-lng > li {
+		width: 40px;
+		float: left;
+	}
+
+	.block-contact-mini {
+		max-width: 768px;
+	}
+
+	.screen-frond .text {
 		padding-left: 0px;
 		min-height: 0px
 	}
 
-	.screen-frond  .menu ul {
+	.screen-frond .menu ul {
 		margin-left: 0px;
-
 
 	}
 
@@ -80,19 +115,13 @@
 
 	}
 
-	.screen-frond  .menu li.indent {
+	.screen-frond .menu li.indent {
 		margin: 0 30px 0 30px;
 	}
 
-
-
-
-	.screen-water-frond  > .wrapper {
+	.screen-water-frond > .wrapper {
 		margin-right: 0px;
 	}
-
-
-
 
 	.screen-water-frond > .wrapper > .img {
 		position: relative;
@@ -105,7 +134,7 @@
 		height: 60%;
 	}
 
-	.screen-water-frond  .img img {
+	.screen-water-frond .img img {
 
 		margin: 13px; /**/
 	}
@@ -115,6 +144,8 @@
 		margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
 	}
 
+
+
 /***************************************************************/
 }/***end @media  979px ***/
 
@@ -122,54 +153,61 @@
 
 @media (max-width: 767px) { /* 768 x 1024 iPad*/ /* iPhone 6 x 750 x 1334 */
 /***************************************************************/
-
-.block-logo > .row {
+	.block-logo > .row {
 		background: url("../images/bg_none.gif") no-repeat;
-}
+	}
 
-h1 { font-size:50px;}
-.block-logo > .row > h1 > p {
-	font-size:40px;
-}
+	h1 {
+		font-size: 50px;
+	}
 
-.page-title > div > p {
-	font-size: 40px;
-}
+	.block-logo > .row > h1 > p {
+		font-size: 40px;
+	}
 
-.wrapper-mainmenu {
-	max-width: 600px;
-	margin: auto;
-}
+	.page-title > div > p {
+		font-size: 40px;
+	}
 
+	.wrapper-mainmenu {
+		max-width: 600px;
+		margin: auto;
+	}
 
+	.block-contact-mini {
+		/*max-width: 768px;*/
+	}
 
-.block-contact-mini {
-/*max-width: 768px;*/
-}
-
-.block-contact-mini > .ico  {
-	 text-align: left;
-}
-
-.block-contact-mini > .ico > div >img {padding: 0px 10px 10px 0;}
-.block-contact-mini > .ico > div >h5 {display: inline;}
-
-
-.ico_phone > ul>li  {display: inline;
-	padding-right: 15px;
-
-}
+	.block-contact-mini > .ico {
+		text-align: left;
+	}
+	.icon-contact {
+		width: 24px;
+		height: 24px;
+		margin-right: 20px;
+	}
 
 
+	.block-contact-mini > .ico > div > img {
+		padding: 0px 10px 10px 0;
+	}
 
-.block-contact-mini > .ico > div {
-	float:none;
-	width:100%;
+	.block-contact-mini > .ico > div > p:nth-child(2) {
+		display: inline;
+	}
 
-	/*padding: 15px 40px;*/
-}
+	.ico_phone > ul > li {
+		display: inline;
+		padding-right: 15px;
 
+	}
 
+	.block-contact-mini > .ico > div {
+		float: none;
+		width: 100%;
+
+		padding: 15px 40px 0 40px;
+	}
 
 
 
