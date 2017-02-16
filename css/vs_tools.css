@@ -1,0 +1,622 @@
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    direction: ltr
+}
+
+
+
+:focus, a:active, a:focus, a:hover, button, button:active, button:focus, embed, input::-moz-focus-inner, object {
+    outline: 0
+}
+
+
+
+a img {border:none;}
+a:focus, a:hover {color:#09f;}
+a {color:#06c;text-decoration:underline;}
+
+
+
+.first {margin-left:0;padding-left:0;}
+.last {margin-right:0;padding-right:0;}
+.top {margin-top:0;padding-top:0;}
+.bottom {margin-bottom:0;padding-bottom:0;}
+
+
+
+.air { position: absolute; z-index: 5}
+.air-top { top: 0}
+.air-top-right { top: 0; right: 0}
+.air-top-left { top: 0;  left: 0}
+.air-bottom { bottom: 0}
+.air-bottom-left { bottom: 0; left: 0}
+.air-bottom-right { bottom: 0; right: 0}
+
+
+
+.center-block {
+    display: block !important;
+    margin: 0 auto !important
+}
+
+.center-inline  {
+    display: inline !important;
+    text-align: center !important
+}
+
+ /*bootstrap class: .text-left .text-center .text-right .text-justify*/
+.text-center  { text-align: center !important}
+.text-justify { text-align: justify !important}
+.text-left    { text-align: left !important}
+.text-right   { text-align: right !important}
+
+
+
+.hidden, .display-none {display: none !important}
+.display-normal { display: inline !important }
+.display-inline { display: inline-block !important }
+.display-block { display: block !important }
+
+
+
+.left,  .pull-left {float:left !important;}
+.right, .pull-right {float:right !important;}
+
+
+
+.clearfix:after, .clearfix:before { content: ""; display: table; border-collapse: collapse;}
+.clearfix:after /*, .container:after */ {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix /*, .container*/ {display:block; min-height: 0}
+.clear {clear:both;}
+
+
+
+.zfix {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.zfront {z-index: 100;}
+
+
+
+
+.resizable {
+    position: relative
+}
+
+.resizable-handle {
+    position: absolute;
+    font-size: .1px;
+    z-index: 99999;
+    display: block
+}
+
+
+
+.no-border {
+    border-width: 0 !important
+}
+
+.no-border-radius {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0
+}
+
+.border-box   { /* Свойства width и height включают в себя значения полей и границ, но не отступов (margin). */
+    webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+
+.remove-draw-element {
+    -webkit-appearance: none; /*Removes default chrome and safari style*/
+    -moz-appearance: none; /* Removes Default Firefox style*/
+    text-indent: 0.01px; /* Removes default arrow from firefox*/
+    text-overflow: ""; /*Removes default arrow from firefox*/
+}
+
+
+
+
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin:0 0 17px;border:none;}
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+hr.null {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  /*
+  float: left;
+  position: relative;
+  min-height: 0px;
+  */
+}
+
+
+
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+
+
+.lr-debug {
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #f00 !important;
+  color:#000 !important;
+}
+
+
+.lr-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: 1.3;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Fexbox Begin ************************************/
+/*
+http://html5.by/blogdemo/flexbox/flex-direction-align-justify.html
+http://html5.by/blogdemo/flexbox/flex-direction-multiline.html
+http://html5.by/blogdemo/flexbox/flex-grow-shrink-basis.html
+http://html5.by/blogdemo/flexbox/flex-alignself-order.html
+*/
+
+.flex-container {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /*flex-direction – направление главной оси
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;*/
+
+    /*flex-direction – направление главной оси
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;*/
+
+    /*flex-direction – направление главной оси
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
+
+   /*flex-direction – направление главной оси
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;*/
+
+    /*justify-content – выравнивание по главной оси.
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;*/
+
+   /*align-items – выравнивание по поперечной оси.
+   -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;*/
+
+
+}
+
+.flex-block {
+
+    /*flex-wrap – многострочный режим
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;*/
+
+    /*align-content  - выровнены по вертикали и как они поделят между собой все пространство flex-контейне
+    раработает только в многострочном режиме
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;*/
+
+    /*flex-flow – удобное сокращение для flex-direction + flex-wrap
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;*/
+
+    /*flex-grow – “жадность” отдельно взятого flex-блока
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;*/
+
+    /*flex-shrink – фактор “сжимаемости” отдельно взятого flex-блока
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;*/
+
+    /*flex-basis – базовый размер отдельно взятого flex-блока
+    -webkit-flex-basis: auto;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;*/
+
+    /*flex – короткая запись для свойств flex-grow, flex-shrink и flex-basis
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;*/
+
+    /*align-self – выравнивание отдельно взятого flex-блока по поперечной оси.
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;*/
+
+    /*order – порядок следования отдельно взятого flex-блока внутри flex-контейнера.
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;*/
+
+}
+
+
+
+.flex-block-stretch { /*чилды растягиваться на все пустое пространство родительского блока  */
+  -moz-flex-box: 1;
+  -webkit-flex-box:1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 100%;
+}
+
+
+
+/** Fexbox end ****************************************/
+
+
+
+/** Padding Begin ************************************/
+.padding-null, .no-padding  {  padding: 0 !important;}
+
+.padding-side-15 {  padding: 0 15px !important;}
+.padding-side-30 {  padding: 0 30px !important;}
+
+.padding-5 {  padding: 5px !important}
+.padding-10 { padding: 10px !important}
+.padding-15 { padding: 15px !important}
+
+
+.padding-top-0 {   padding-top: 0 !important}
+.padding-top-5 {  padding-top: 5px !important}
+.padding-top-10 {  padding-top: 10px !important}
+.padding-top-15 {  padding-top: 15px !important}
+
+
+.padding-bottom-0 { padding-bottom: 0 !important }
+.padding-bottom-5 { padding-bottom: 5px !important}
+.padding-bottom-10 { padding-bottom: 10px !important}
+.padding-bottom-15 { padding-bottom: 15px !important}
+/** Padding End **************************************/
+
+/** Margin Begin *************************************/
+.margin-null, .no-margin  {  margin: 0 !important;}
+
+.margin-side-15 {  margin: 0 15px !important;}
+.margin-side-30 {  margin: 0 30px !important;}
+
+.margin-top-0 { margin-top: 0 !important}
+.margin-top-5 { margin-top: 5px !important}
+.margin-top-10 { margin-top: 10px !important }
+.margin-top-15 { margin-top: 15px !important }
+
+
+.margin-bottom-0 {margin-bottom: 0 !important}
+.margin-bottom-5 { margin-bottom: 5px !important}
+.margin-bottom-10 { margin-bottom: 10px !important}
+.margin-bottom-15 { margin-bottom: 15px !important}
+/** End Begin ****************************************/
+
+
+
+/** Cursor Begin *************************************/
+
+.cursor-auto {cursor: auto}
+.cursor-default {cursor: default}
+.cursor-pointer { cursor: pointer}
+.cursor-none { cursor: none}
+.cursor-context-menu {cursor: context-menu}
+.cursor-help { cursor: help}
+.cursor-progress {cursor: progress}
+.cursor-wait {cursor: wait}
+.cursor-cell {cursor: cell}
+.cursor-crosshair {cursor: crosshair}
+.cursor-text {cursor: text}
+.cursor-vertical-text {cursor: vertical-text}
+.cursor-alias {cursor: alias}
+.cursor-copy {cursor: copy}
+.cursor-move {cursor: move}
+.cursor-no-drop {cursor: no-drop}
+.cursor-not-allowed {cursor: not-allowed}
+.cursor-all-scroll {cursor: all-scroll}
+.cursor-col-resize {cursor: col-resize}
+.cursor-row-resize {cursor: row-resize}
+.cursor-n-resize {cursor: n-resize}
+.cursor-e-resize {cursor: e-resize}
+.cursor-s-resize {cursor: s-resize}
+.cursor-w-resize {cursor: w-resize}
+.cursor-ns-resize {cursor: ns-resize}
+.cursor-ew-resize {cursor: ew-resize}
+.cursor-ne-resize {cursor: ne-resize}
+.cursor-nw-resize {cursor: nw-resize}
+.cursor-se-resize {cursor: se-resize}
+.cursor-sw-resize {cursor: sw-resize}
+.cursor-nesw-resize {cursor: nesw-resize}
+.cursor-nwse-resize {cursor: nwse-resize}
+
+/** Cursor End ***************************************/
+
+
+
+/** Custom-Scroll Begin*******************************/
+.custom-scroll::-webkit-scrollbar {
+    -webkit-overflow-scrolling: touch;
+    height: 10px;
+    width: 10px
+}
+
+.custom-scroll::-webkit-scrollbar:hover {
+    background-color: #E9E9E9;
+    border: 1px solid #dbdbdb
+}
+
+.custom-scroll::-webkit-scrollbar-button:end:increment, .custom-scroll::-webkit-scrollbar-button:start:decrement {
+    background: 0 0;
+    display: block;
+    height: 0
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent
+}
+
+.custom-scroll::-webkit-scrollbar-track-piece {
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: transparent;
+    border-radius: 0
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    -moz-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    background-clip: padding-box;
+    background-color: rgba(0, 0, 0, .2);
+    border: none;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:horizontal, .custom-scroll::-webkit-scrollbar-thumb:vertical {
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #bfbfbf;
+    border-radius: 0
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:active {
+    -moz-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .33);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .33);
+    background-color: rgba(0, 0, 0, .44);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .33)
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #959595
+}
+/** Custom-Scroll End ********************************/
+
+
+
+
+/** Alert Messages Begin *******************************/
+
+.alert {
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #675100;
+    border-width: 0;
+    border-left-width: 5px;
+    padding: 10px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0
+}
+
+.alert .close {
+    top: 0;
+    right: -5px;
+    line-height: 20px
+}
+
+.alert-heading {
+    font-weight: 600
+}
+
+.alert-danger {
+    border-color: #953b39;
+    color: #fff;
+    background-color: #c26565;
+    text-shadow: none
+}
+
+.alert-warning {
+    border-color: #dfb56c;
+    color: #826430;
+    background-color: #efe1b3
+}
+
+.alert-success {
+    border-color: #8ac38b;
+    color: #356635;
+    background-color: #cde0c4
+}
+
+.alert-info {
+    border-color: #9cb4c5;
+    color: #305d8c;
+    background-color: #d6dde7
+}
+/** Alert Messages End *******************************/
+
+
+
+
+/** Google maps Begin ********************************/
+.google_maps * {
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box
+}
+
+.google_maps img {
+    max-width: none
+}
+/** Google maps End **********************************/
+
+
+
+.icon {
+    display: block;
+    text-indent: -99999px;
+    overflow: hidden;
+    background-repeat: no-repeat
+}
+
+
+
+
+
+
+
+/*
+.btn {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .05)
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    left: 1px
+}
+
+
+.ui-button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
+
+.ui-button:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.ui-button:focus, .ui-button:hover {
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+    text-decoration: none
+}
+
+
+
+.customfile-button {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
+
+
+
+*/

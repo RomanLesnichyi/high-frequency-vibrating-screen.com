@@ -1,0 +1,247 @@
+/***********************************/
+/* CONTACT BEGIN
+/***********************************/
+
+
+.wrapper-contact {
+    margin: 0 15px 0 15px;
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.wrapper-contact-block {
+    width: calc( 50% - 12px);
+    /*width: calc( 50% - 22px);*/
+
+
+}
+
+
+.wrapper-contact-block.block1 {
+    display:  inline-block  ;
+    float:left;
+    /*margin-left:15px;*/
+}
+
+.wrapper-contact-block.block2 {
+    display:  inline-block;
+    float:right;
+    /*margin-right:15px;*/
+}
+
+
+
+
+.block-title-contact {
+
+    width: 100%;
+    height: 50px;
+
+    background: url('../images/bg_contact.png')  #f4f6f9;
+    border-bottom:  2px solid #c6d4e3;
+    box-sizing: content-box ;
+}
+
+
+
+.block-title-contact .ico-title-map {
+    width: 50px;
+    height: 50px;
+
+    background: url(../images/ico_contact_titel_map.png) center no-repeat rgba(223,237,246,0.6);
+    float:left;
+    display:  inline-block  ;
+}
+
+.block-title-contact .ico-title-mail {
+    width: 50px;
+    height: 50px;
+
+    background: url(../images/ico_contact_titel_mail.png) center no-repeat rgba(223,237,246,0.6);
+    float:left;
+    display:  inline-block  ;
+}
+
+
+
+.block-title-contact .text {
+    line-height: 50px;
+    padding-left:55px;
+}
+
+
+
+
+.mes-corn-lt, .mes-corn-rt, .mes-corn-lb, .mes-corn-rb {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: url('../images/bg_mes_corn_sprite.png') no-repeat;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.mes-corn-lt { background-position: 0 0; 		left: 0; 	top: 0; }
+.mes-corn-rt { background-position: -10px 0;  	right: 0;   top: 0; }
+.mes-corn-lb { background-position: 0 -10px;  	left: 0;    bottom: 0; }
+.mes-corn-rb { background-position: -10px -10px;	right: 0;   bottom: 0; }
+.mes-corn-rt, .mes-corn-rb { margin-left: 100%; left: -10px; /* для IE6 */ }
+
+
+
+
+dl.block-info-contact {
+    margin-left:25px;
+}
+
+.block-info-contact > dt {
+
+    font-family: 'compactc';
+    font-size: 36px;
+    color:#304658;
+}
+
+.block-info-contact > dd {
+    position: relative;
+    margin-bottom:35px;
+    margin-left:25px;
+    padding:10px 15px;
+    background: url(../images/bg_mes.png) left repeat-y;
+
+}
+
+/***********************************/
+
+.contact-form {
+    font-weight:900;
+    font-size: 20px;
+    color:#304658;
+}
+
+
+.contact-form-control {
+    width: 100%;
+    max-width: 100%; /*textarea*/
+    border: 2px solid #dfedf6;
+    background-color:#fdfeff;
+
+    font-weight:500;
+    font-size: 18px;
+    color:#000;
+
+}
+
+
+.contact-form-submit {
+    font-family: 'compactc';
+    font-size: 30px;
+    color:#fff;
+    display:  inline;
+    width: 220px;
+
+
+    border: 2px solid #dfedf6;
+    background-color:#5987e5;
+}
+
+
+
+
+/** CMultiFileUpload Begin *******/
+
+.MultiFile-applied, .MultiFile-label   {
+    position: relative;
+    overflow: hidden;
+    width: 100% ;
+    background: url(../images/bg_3.png);
+
+    height: 42px;
+    border-bottom: 2px solid #e9effa;
+    margin-bottom: 8px;
+
+}
+
+.MultiFile-applied {
+    background: url(../images/ico_contact_form_attach_file.png) no-repeat  8px 50%,
+    url(../images/bg_3.png) repeat ;
+}
+
+
+.MultiFile-label {
+    background: url(../images/ico_contact_form_add_file.png) no-repeat  8px 50%,
+    url(../images/bg_3.png) repeat ;
+}
+
+
+.MultiFile-fileUpload {
+    width: 100%; //40px;
+    height: 42px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+.MultiFile-title {
+    margin: 0px 40px 0px 40px;
+    padding-left: 15px;
+    background: none;
+    line-height: 42px;
+    color: #304658;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+
+
+.MultiFile-remove   {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    overflow: hidden;
+    background: url('../images/ico_contact_form_remove.png') no-repeat;
+}
+
+.attach_file, .MultiFile-remove,  .add_file {
+    position: absolute;
+    width: 32px;
+    height: 42px;
+    top: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.MultiFile-remove { right: 8px; }
+
+/***********************************/
+.wrapper-map {
+    margin: 40px 0px 40px 0px;
+    border: 2px solid #dfedf6;
+    background-color:#fdfeff;
+}
+
+#map {
+    width: 100%;
+    height: 310px;
+}
+#map .gm-style  a > div {display: none}
+#map .gm-svpc {display: none}
+#map .gm-style-cc {display: none}
+#map .gm-style-mtc > div {background-color: #f4f6f9 !important;}
+#map .gm-style-mtc > div > div {background-color: #e7f0f6 !important;}
+#map .gmnoprint > div {background-color: #f4f6f9 !important;}
+
+
+/***********************************/
+/* CONTACT END
+/***********************************/
+
+
