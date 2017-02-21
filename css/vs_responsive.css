@@ -187,6 +187,9 @@
 		margin-right: 20px;
 	}
 
+	.block-contact-mini > .titel > p:nth-child(1) {
+		text-align: left;
+	}
 
 	.block-contact-mini > .ico > div > img {
 		padding: 0px 10px 10px 0;
@@ -296,6 +299,13 @@
 		width: 100%;
 	}
 
+	.screen-frond  img,
+	.screen-water-frond video {
+		width: 100%;
+		max-width: 400px;
+		padding: 8px;
+	}
+
 
 	body {
 		font-size: 14px;
@@ -304,7 +314,8 @@
 
 	.page-title > div,
 	.wrapper-home,
-	.wrapper-oborudovanie {
+	.wrapper-oborudovanie,
+	.wrapper-contact  {
 		margin: 0 5px;
 	}
 
@@ -317,15 +328,24 @@
 	.screen-frond  .titel > h2,
 	.screen-water-frond .titel > h2,
 	.page-title > div > p,
-	.block-contact-mini > .titel > p:nth-child(1),
- {
+	.block-contact-mini > .titel > p:nth-child(1) {
 		font-size: 30px;
+	}
+
+	.screen-frond .menu li, .screen-frond .menu li > a {
+		font-size: 14px;
 	}
 
 	.block-contact-mini > .ico > div > p:nth-child(2),
 	.wrapper-tabs > .tabs,
 	.block-info-contact > dt	{
 		font-size: 24px;
+	}
+
+
+	.contact-form-submit {
+		font-size: 18px;
+		width: 100%;
 	}
 
 	.icon-contact {
@@ -335,6 +355,17 @@
 
 	.block-contact-mini > .ico > div {
 		padding: 15px 20px;
+	}
+
+
+	dl.block-info-contact {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+	.block-info-contact > dd {
+		margin-left: 20px;
+		margin-bottom: 20px;
 	}
 
 
@@ -356,6 +387,25 @@
 	.drawing-gvd > div img {
 		width: 100%;
 	}
+
+
+	.screen-frond .menu li, .screen-frond .menu li > a {
+		font-size: 10px;
+	}
+
+	.screen-frond  .menu ul {
+		padding:  5px 0px;
+		height:auto;
+	}
+/*	.screen-frond .menu li {
+		display: block;
+	}
+
+	.screen-frond .menu li.indent {
+		display:none;
+	}*/
+
+
 
 /***************************************************************/
 }/***end @media  479px ***/

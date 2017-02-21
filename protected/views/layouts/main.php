@@ -15,8 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
 
 <!--	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/RomanLesnichyi/templates.my/880762b8/css/lr_tools.css">-->
-<!--	<link rel="stylesheet" type="text/css" href="--><?php //echo Yii::app()->request->baseUrl; ?><!--/css/vs_tools.css">-->
-	<link rel="stylesheet" type="text/css" href="http://templates.my/css/css/lr_tools.css">
+<!--	<link rel="stylesheet" type="text/css" href="http://templates.my/css/lr_tools.css">-->
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_tools.css">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_main.css">
 	<?php 	Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . "/css/vs_responsive.css"); ?>

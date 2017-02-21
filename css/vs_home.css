@@ -224,8 +224,12 @@ height: 100%;
 .block-contact-mini > .titel > p {
 }
 
-.block-contact-mini > .ico {
+.block-contact-mini > .titel > p:nth-child(1) {
+	text-align: center;
+}
 
+.block-contact-mini > .ico {
+	width:100%; overflow:auto;
 }
 
 .block-contact-mini > .ico > div {

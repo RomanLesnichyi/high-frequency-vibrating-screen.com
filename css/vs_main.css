@@ -365,15 +365,15 @@ ul.nav-stacked {
 
 .table>thead>tr>th { border-bottom: 2px solid #abb7cd;}
 .table>tbody>tr>td {border: 0px; color: #708292;}
-.table>tbody>tr>td {}
+.table>tbody>tr>td {text-align: left; }
 .tab-row-even { background-color: #eff5fa; border-top: 2px solid #dfedf6;  font-weight:900;}
 .tab-row-even-fseveral { background-color: #eff5fa; border-top: 2px solid #dfedf6; font-weight:900; }
-.tab-row-even-several { background-color: #ecf3f9;   font-size: 18px; color: #708292; border-top: 1px solid #dfedf6;}
+.tab-row-even-several { background-color: #ecf3f9;   font-size: 90%; color: #708292; border-top: 1px solid #dfedf6;}
 .tab-row-even-several > td {padding: 0px 8px 0px 8px !important; }
 .tab-row-even-several.last >td {padding-bottom: 8px !important;}
 .tab-row-noeven { background-color: #f7fbff; border-top: 2px solid #dfedf6;  font-weight:900;}
 
-.table>tbody>tr>td.value-text{ text-align: center;}
+.table>tbody>tr>td.value-text{ text-align: center;  }
 .table>tbody>tr>td:not(:first-child) { font-weight:900;	color: #304658; }
 .table>tbody>tr>td:not(:first-child) > p { margin:0; padding:0; padding-left:40%; }
 
