@@ -387,6 +387,10 @@
 	.drawing-gvd > div img {
 		width: 100%;
 	}
+	.wrapper-panel-photos .titel > p > span,
+	.wrapper-panel-video .titel > p > span {
+		display: none;
+	}
 
 
 	.screen-frond .menu li, .screen-frond .menu li > a {

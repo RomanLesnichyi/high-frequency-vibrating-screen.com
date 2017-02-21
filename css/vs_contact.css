@@ -66,7 +66,9 @@
 
 .block-title-contact .text {
     line-height: 50px;
-    padding-left:55px;
+    padding-left:65px;
+    font-weight:900;
+    color:#abb7cd;
 }
 
 
@@ -114,7 +116,6 @@ dl.block-info-contact {
 
 .contact-form {
     font-weight:900;
-    font-size: 20px;
     color:#304658;
 }
 
@@ -131,6 +132,10 @@ dl.block-info-contact {
 
 }
 
+.contact-form textarea {
+    height: 310px;
+
+}
 
 .contact-form-submit {
     font-family: 'compactc';
