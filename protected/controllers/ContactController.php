@@ -6,12 +6,8 @@ class ContactController extends Controller
 
         protected function beforeAction($action)
         {
-
-
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/vs_contact.css');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_map.js");
-
-
 
             return parent::beforeAction($action);
         }
@@ -46,20 +42,20 @@ class ContactController extends Controller
                   //$this->render('confirm', ['model' => $modelFormContact]);
                   $modelFormContact->sendMail($modelFormContact);
 
-                  Yii::app()->user->setFlash('success', "Content successfuly created.");
-                  Yii::app()->user->setFlash('ContactFormMessage', "Thank you for contacting us. We will respond to you as soon as possible.");
+                  Yii::app()->user->setFlash('success', "Thank you for contacting us. We will respond to you as soon as possible.");
                   $this->refresh();
 
                   unset ($_POST['FormContact']);
                   $modelFormContact->unsetAttributes();
                 }
                 else {
-                     //echo ' validate error ';render
-                     //print_r( $modelFormContact->getErrors());
-                     // $modelFormContact->addError('firstName','firstName Неправильное имя.');
-                        $test = $modelFormContact->getErrors();
-                      Yii::app()->user->setFlash('danger', 'danger!'.$test);
-                      $this->render('index', ['modelFormContact' => $modelFormContact]);
+                    //echo ' validate error ';render
+                    //print_r( $modelFormContact->getErrors());
+                    // $modelFormContact->addError('firstName','firstName Неправильное имя.');
+                    $allErrors = $modelFormContact->getErrors();
+                    Yii::app()->user->setFlash('danger', $allErrors);
+
+                    $this->render('index', ['modelFormContact' => $modelFormContact]);
 
                 }
 
@@ -70,8 +66,8 @@ class ContactController extends Controller
 
           else   {
                   //echo ' no post';
-              $test = $modelFormContact->getErrors();
-              Yii::app()->user->setFlash('danger', 'danger!!'.$test);
+              $allErrors = $modelFormContact->getErrors();
+              Yii::app()->user->setFlash('danger', $allErrors);
               $this->render('index', ['modelFormContact' => $modelFormContact]);
           }
 

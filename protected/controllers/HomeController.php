@@ -1,12 +1,13 @@
 <?php
 
+
 class HomeController extends Controller
 {
 
         protected function beforeAction($action)
         {
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/css/vs_home.css');
-
+            MainHelpers::registerVideoJS();
             return parent::beforeAction($action);
         }
 

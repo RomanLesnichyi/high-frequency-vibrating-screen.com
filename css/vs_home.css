@@ -158,24 +158,44 @@ vertical-align:  middle;
 	background-color: rgba(210,205,255,0.5);
 
 
-}
-
-.screen-water-frond  .img img {
-
-margin-top: 13px; /**/
-border: 2px solid #40143b;
 
 }
 
+.flex-container {
+	display: -moz-box;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 
-.wrapper-img {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+
+}
+
+.flex-block-center {
+	/*align-self – выравнивание отдельно взятого flex-блока по поперечной оси.*/
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+}
+
+.wrapper-video {
 /*line-height: 400px;*/
 background-color: transparent;
 height: 100%;
 
+
 }
 
+.wrapper-video #video-dewatering {
 
+
+}
 
 .screen-water-frond  .text > p > a {
 	font-weight:900;

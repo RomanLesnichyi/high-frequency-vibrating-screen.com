@@ -48,6 +48,7 @@
   -moz-border-radius: 1.5em;
   border-radius: 1.5em;
 
+/* http://www.cssmatic.com/box-shadow */
 }
 
 
@@ -57,14 +58,26 @@
 }
 
 
+/*
+
+.video-js .vjs-big-play-button {
+  font-size: 0;
+  line-height: 1.4em;
+  height: 122px;
+  width: 122px;
+  background-color:#f00 ;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+
+
+}
+*/
 
 
 
-
-
-
-
-/************************************************/
+  /************************************************/
 .vjs-skin-colors-blue {
   color: #66A8CC;
 }

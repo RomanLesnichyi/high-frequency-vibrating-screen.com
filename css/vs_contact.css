@@ -31,7 +31,6 @@
 
 
 
-
 .block-title-contact {
 
     width: 100%;
@@ -40,6 +39,7 @@
     background: url('../images/bg_contact.png')  #f4f6f9;
     border-bottom:  2px solid #c6d4e3;
     box-sizing: content-box ;
+    margin-bottom: 15px;
 }
 
 
@@ -89,11 +89,15 @@
 .mes-corn-rb { background-position: -10px -10px;	right: 0;   bottom: 0; }
 .mes-corn-rt, .mes-corn-rb { margin-left: 100%; left: -10px; /* для IE6 */ }
 
-
+.block-info-contact >div:nth-child(1) {
+    margin-top: -3px;
+    margin-bottom: 15px;
+}
 
 
 dl.block-info-contact {
     margin-left:25px;
+
 }
 
 .block-info-contact > dt {
@@ -113,6 +117,10 @@ dl.block-info-contact {
 }
 
 /***********************************/
+
+.contact-form .alert-danger {
+    display: none;
+}
 
 .contact-form {
     font-weight:900;

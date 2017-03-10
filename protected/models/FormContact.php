@@ -14,7 +14,7 @@ class FormContact extends CFormModel
     public function rules()
     {
         return array(
-            array('email', 'required'),
+            array('email,messages',  'required'),
             array('email', 'email',),
             array('email, messages, files_attachment', 'safe'),
         );
@@ -74,10 +74,11 @@ class FormContact extends CFormModel
 
         Yii::app()->mail->send($modelEmailMessage);
         // нужно удалить врменый файл на сервере созданый скриптом
+        /*
         foreach($files_delete as $file)
             if(file_exists($file)) {
                 unlink($file);
-            }
+            }*/
 
     }
 
