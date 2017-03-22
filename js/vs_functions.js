@@ -16,16 +16,6 @@
 
 
 
-/*
-
-     $('.MultiFile-fileUpload').wrapAll("<div class='wrapper-MultiFile-fileUpload MultiFile-applied'></div>");
-     $('.wrapper-MultiFile-fileUpload').append('<span class="MultiFile-title"> Прикрепить файл к письму</span>');
-     $('#UpTo3Files').MultiFile(5);
-
-
-*/
-
-
 
 
      ///////////////////////////////////////////////////////////////
@@ -71,29 +61,3 @@
 //-----------------------------------------------------------//
 ///////////////////////////////////////////////////////////////
  });
-
-
-
-
-
-/*
-$(document).ready(function() {
-    alert("Метод ready()");
-});
-
-
-<!--  Contact Form 7
-================================================== -->
-
-    jQuery(document).ready(function($){
-
-
-    });
-
-
-<!--  Tab
-================================================== -->
-$(document).ready(function() {
-    $('#mytab a[href="#tab1"]').tab('show');
-});
-*/

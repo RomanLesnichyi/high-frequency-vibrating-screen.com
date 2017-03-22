@@ -162,6 +162,8 @@ dl.block-info-contact {
 
 /** CMultiFileUpload Begin *******/
 
+
+
 .MultiFile-applied, .MultiFile-label   {
     position: relative;
     overflow: hidden;
@@ -186,18 +188,22 @@ dl.block-info-contact {
 }
 
 
-.MultiFile-fileUpload {
-    width: 100%; //40px;
-    height: 42px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 0;
-    padding: 0;
-    font-size: 0px;
+#MultiFileUpload-button {
     cursor: pointer;
-    opacity: 0;
-    filter: alpha(opacity=0);
+}
+
+.MultiFile-fileUpload {
+     width: 100%;
+     height: 42px;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     margin: 0;
+     padding: 0;
+     font-size: 0px;
+     cursor: pointer;
+     opacity: 0;
+     filter: alpha(opacity=0);
 }
 
 
@@ -233,6 +239,7 @@ dl.block-info-contact {
 }
 
 .MultiFile-remove { right: 8px; }
+
 
 /***********************************/
 .wrapper-map {
