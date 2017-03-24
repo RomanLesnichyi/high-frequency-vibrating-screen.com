@@ -8,6 +8,9 @@ class ContactController extends Controller
         {
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/vs_contact.css');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_map.js");
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/framework/jquery.multifile.js");
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_test.js");
+
 
             return parent::beforeAction($action);
         }
