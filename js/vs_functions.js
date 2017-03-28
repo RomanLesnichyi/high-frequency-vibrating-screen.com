@@ -20,6 +20,50 @@
          return ('' + fullPath).replace(/^.*[\\\/]/, '');
      }
 
+     ///////////////////////////////////////////////////////////////
+     /* при нажатии на ссылку, содержащую Thumbnail открытие модального окна
+     $(function() {
+         //при нажатии на ссылку, содержащую Thumbnail
+         $('.wrapper-panel-photos a.thumbnail').click(function(e) {
+             //отменить стандартное действие браузера
+             e.preventDefault();
+             //присвоить атрибуту scr элемента img модального окна
+             //значение атрибута scr изображения, которое обёрнуто
+             //вокруг элемента a, на который нажал пользователь
+             $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
+             //открыть модальное окно
+             $("#image-modal").modal('show');
+         });
+         //при нажатию на изображение внутри модального окна
+         //закрыть его (модальное окно)
+         $('#image-modal .modal-body img').on('click', function() {
+             $("#image-modal").modal('hide')
+         });
+     });
+    */
+
+     ///////////////////////////////////////////////////////////////
+     /* при нажатии на ссылку, содержащую Thumbnail открытие модального окна*/
+     $('.wrapper-panel-photos a.thumbnail').click(function(e) {
+         //отменить стандартное действие браузера
+         e.preventDefault();
+
+         var pathImg = $(this).find('img').attr('src') ;
+         var fileNameImg = pathImg.substring(pathImg.lastIndexOf('/')+1,pathImg.length);
+         var pathPart1Img = pathImg.substring(0,pathImg.lastIndexOf('/')+1);
+         var fileNameFullImg = fileNameImg.substring(0,fileNameImg.lastIndexOf('_')+1) + '1152.jpg';
+
+         $('#image-modal .modal-body img').attr('src', pathPart1Img+fileNameFullImg);
+         //открыть модальное окно
+         $("#image-modal").modal('show');
+     });
+     //при нажатию на изображение внутри модального окна
+     //закрыть его (модальное окно)
+     $('#image-modal .modal-body img').on('click', function() {
+         $("#image-modal").modal('hide')
+     });
+     ///////////////////////////////////////////////////////////////
+
 
 
 
