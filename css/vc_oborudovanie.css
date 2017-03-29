@@ -8,24 +8,35 @@
 
 
 /*********************************/
-
-.drawing-gvd {text-align: center;}
-
-.drawing-gvd > div {
+.screen-gvd-dewater , .screen-gvd-single, .screen-gvd-drawing {text-align: center;}
+.screen-gvd-drawing > div {
     text-align: center;
     width: 50%;
     float:left;
-    padding-top:40px;
 }
-
-.drawing-gvd >div:nth-child(2)  {
-    padding-top:94px;
+.screen-gvd-drawing > div:nth-child(2)  {
     float:right;
 }
 
 
-
-
+.screen-gvd-drawing.single > div {
+    padding-top:40px;
+}
+.screen-gvd-drawing.single > div:nth-child(2)  {
+    padding-top:57px;
+}
+.screen-gvd-drawing.double > div {
+    padding-top:6px;
+}
+.screen-gvd-drawing.double > div:nth-child(2)  {
+    padding-top:60px;
+}
+.screen-gvd-drawing.dewater > div {
+    padding-top:65px;
+}
+.screen-gvd-drawing.dewater > div:nth-child(2)  {
+    padding-top:63px;
+}
 /*********************************/
 
 

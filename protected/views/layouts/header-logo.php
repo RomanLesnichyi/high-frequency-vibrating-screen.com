@@ -8,7 +8,7 @@
 
 					<div class="mainmenu">
 					    	<div class="row">
-						          <a href="<?php echo Yii::app()->request->baseUrl; ?>/double_deck_vibrating_screen" class="banner "><div class="maxheight">
+						          <a href="<?php echo Yii::app()->request->baseUrl; ?>/single_deck_vibrating_screen" class="banner "><div class="maxheight">
 						            <div class="ico mm-gvd1"><img src="/images/ico_mm_gvd1.png"></div>Односитный</div>
 						          </a>
 						          <a href="<?php echo Yii::app()->request->baseUrl; ?>/double_deck_vibrating_screen" class="banner "><div class="maxheight">

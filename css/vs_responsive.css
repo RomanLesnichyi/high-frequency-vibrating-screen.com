@@ -250,13 +250,13 @@
 
 	/**********************************/
 
-	.drawing-gvd > div {
+	.screen-gvd-drawing > div {
 		width: 90%;
 		float: none;
 		margin: 0 auto;
 		padding: 0;
 	}
-	.drawing-gvd >div:nth-child(2) {
+	.screen-gvd-drawing >div:nth-child(2) {
 		padding-top: 30px;
 		float: none;
 	}
@@ -384,7 +384,7 @@
 		visibility: hidden;
 	}
 
-	.drawing-gvd > div img {
+	.screen-gvd-drawing > div img {
 		width: 100%;
 	}
 	.wrapper-panel-photos .titel > p > span,
