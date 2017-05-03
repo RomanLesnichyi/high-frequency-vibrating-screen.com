@@ -45,7 +45,7 @@ class ContactController extends Controller
                   //$this->render('confirm', ['model' => $modelFormContact]);
                   $modelFormContact->sendMail($modelFormContact);
 
-                  Yii::app()->user->setFlash('success', "Thank you for contacting us. We will respond to you as soon as possible.");
+                  Yii::app()->user->setFlash('success', Yii::t('main', 'Спасибо  за обращение к нам. Мы ответим Вам как можно скорее.') );
                   $this->refresh();
 
                   unset ($_POST['FormContact']);

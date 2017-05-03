@@ -1,6 +1,6 @@
 <?php
 
-class Dewatering_Vibrating_ScreenController extends Controller
+class Dewatering_vibrating_screenController extends Controller
 {
 
     protected function beforeAction($action)

@@ -1,6 +1,6 @@
 <?php
 
-class Double_Deck_Vibrating_ScreenController extends Controller
+class Double_deck_vibrating_screenController extends Controller
 {
 
     protected function beforeAction($action)

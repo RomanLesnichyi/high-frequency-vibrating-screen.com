@@ -57,18 +57,26 @@ return array(
 			'viewPath' => 'application.views.mail',
         ),
 
+		'request'=>array(
+			'enableCookieValidation'=>true,
+			'enableCsrfValidation'=>true,
+		),
 
 		// uncomment the following to enable URLs in path-format
         'urlManager'=>array(
+			'class'=>'application.components.UrlManager',
             'urlFormat'=>'path',
             'showScriptName'=> false,
             'rules'=>array(
 
-                //'<controller:aboutus>/<member:\w+>'=>'<controller>/index',
+				'<language:(ru|ua|en)>/<controller:\w+>/'=>'<controller>/index',
+				'<language:(ru|ua|en)>/<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
 
-				'<controller:[\w-]+>/<id:\d+>'=>'<controller>/view',
-				'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:[\w-]+>/<action:[\w-]+>'=>'<controller>/<action>',
+				//'<controller:[\w-]+>/<id:\d+>'=>'<controller>/view',
+				//'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>'=>'<controller>/<action>',
+				//'<controller:[\w-]+>/<action:[\w-]+>'=>'<controller>/<action>',
 
 
 			),
@@ -76,7 +84,7 @@ return array(
 
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		//'db'=>require(dirname(__FILE__).'/database.php'),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -105,6 +113,9 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
+
+		'languages'=>array('ru'=>'Русский', 'ua'=>'Українська', 'en'=>'English'),
+
 		// this is used in contact page
 		'adminEmail'=>'roman.lesnichyi@gmail.com',
 	),

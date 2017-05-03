@@ -18,12 +18,12 @@
 <!--                    <li class="active">
 						<a href="<?php /*echo Yii::app()->request->baseUrl; */?>/home" class="section">Главная</a>
 					</li>-->
-					<li class="active"><a href="<?php echo Yii::app()->request->baseUrl; ?>/home" class="section">Главная</a></li>
+					<li class="active"><a href="home" class="section"><?php echo Yii::t('main', 'Главная'); ?></a></li>
 
-					<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/single_deck_vibrating_screen" class="section">Грохот односитный</a></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/double_deck_vibrating_screen" class="section">Грохот двухситный</a></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/dewatering_vibrating_screen" class="section">Грохот обезвожующий</a></li>
-                    <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/contact" class="section">Контакты</a></li>
+					<li><a href="single_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот односитный'); ?></a></li>
+                    <li><a href="double_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот двухситный'); ?></a></li>
+                    <li><a href="dewatering_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот обезвожующий'); ?></a></li>
+                    <li><a href="contact" class="section"><?php echo Yii::t('main', 'Контакты'); ?></a></li>
                 </ul>
 
 
