@@ -72,8 +72,25 @@
 		font-size: 24px;
 	}
 
+	.menu-section,
+	.nav.menu-lng {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+
+	.nav.menu-lng {
+		background-color: #94c1f3;
+	}
+
+
 	.nav.menu-lng > li > a, .nav.menu-lng > li > a:hover {
 		background: url('../images/bg_none.gif');
+		font-weight: 900;
+		font-size: 15px;
+		color: #304658;
+		text-decoration: none;
+
 	}
 
 	.menu-lng > .titel {
@@ -84,9 +101,6 @@
 		color: #fff;
 	}
 
-	.menu-lng > .titel:after {
-		content: "Language";
-	}
 
 	.nav.menu-lng > li {
 		width: 40px;

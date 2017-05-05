@@ -9,7 +9,7 @@
 
 					<div class="mainmenu">
 					    	<div class="row">
-						          <a href="single_deck_vibrating_screen" class="banner "><div class="maxheight">
+						          <a href="single_deck_vibrating_screen " class="banner "><div class="maxheight ">
 						            <div class="ico mm-gvd1"><img src="/images/ico_mm_gvd1.png"></div><?php echo Yii::t('main', 'Односитный'); ?></div>
 						          </a>
 						          <a href="double_deck_vibrating_screen" class="banner "><div class="maxheight">
@@ -40,10 +40,5 @@
 			</div>
 		</div>
 <!-- end Логотип  ------------------------------------------------------------->
-<div  id="language-selector" style="float:right; margin:5px;">
-	<?php
-	$this->widget('application.components.widgets.MultiLanguage');
-	?>
-</div>
 
 

@@ -13,7 +13,8 @@
 				<!-- a class="navbar-brand" href="#">TD PROMMASH</a-->
 			</div>
 
-			<div class="collapse navbar-collapse">
+			<div class="collapse navbar-collapse ">
+
 				<ul class="nav navbar-nav menu-section">
 <!--                    <li class="active">
 						<a href="<?php /*echo Yii::app()->request->baseUrl; */?>/home" class="section">Главная</a>
@@ -26,14 +27,12 @@
                     <li><a href="contact" class="section"><?php echo Yii::t('main', 'Контакты'); ?></a></li>
                 </ul>
 
+				<?php 	$this->widget('application.components.widgets.MultiLanguage');	?>
 
 
-<!--				<ul class="nav navbar-nav navbar-right menu-lng">
-                    <div class="titel"></div>
-                    <li class="ru"><a href="../navbar/">RU</a></li>
-                    <li class="ua active"><a href="../navbar-static-top/">UA</a></li>
-                    <li class="us"><a href="../navbar/">US</a></li>
-                </ul>-->
+			</div>
+
+
 
 			</div><!--/.nav-collapse -->
 		</div>

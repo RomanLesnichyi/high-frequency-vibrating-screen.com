@@ -114,7 +114,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 
-		'languages'=>array('ru'=>'Русский', 'ua'=>'Українська', 'en'=>'English'),
+		'languages'=>array('ru'=>'Русский', 'ua'=>'Украинский', 'en'=>'Английский'),
 
 		// this is used in contact page
 		'adminEmail'=>'roman.lesnichyi@gmail.com',
