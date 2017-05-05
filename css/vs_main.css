@@ -202,10 +202,7 @@ div.navbar-header {
 	background: url(../images/logo_navbar_toggle.png) left no-repeat;
 }
 
-div.navbar-collapse.collapse.in {
-	border-top: 2px solid #304658;
-	margin-top:0px;
-}
+
 /*********************************/
 
 .navbar-fixed-bottom > .wrapper {

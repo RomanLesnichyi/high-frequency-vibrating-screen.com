@@ -72,14 +72,16 @@
 		font-size: 24px;
 	}
 
-	.menu-section,
+
+	.menu-section  {
+		margin-top: 0;
+		margin-bottom: 0;
+		border-top: 2px solid #304658;
+	}
+
 	.nav.menu-lng {
 		margin-top: 0;
 		margin-bottom: 0;
-	}
-
-
-	.nav.menu-lng {
 		background-color: #94c1f3;
 	}
 
