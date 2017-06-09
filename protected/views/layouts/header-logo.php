@@ -2,7 +2,29 @@
 		<div class="block-logo">
 			<div class="row">
 				<!--h1>ГРОХОТА ВИБРАЦИОННЫЕ<p>ДЛЯ ТОНКОГО ГРОХОЧЕНИЯ</p></h1-->
-				<h1><?php echo Yii::t('main', 'ГРОХОТА ВИБРАЦИОННЫЕ <p>ДЛЯ ТОНКОГО ГРОХОЧЕНИЯ'); ?></h1>
+				<!--h1><?php //echo Yii::t('main', 'ГРОХОТА ВИБРАЦИОННЫЕ <p>ДЛЯ ТОНКОГО ГРОХОЧЕНИЯ'); ?></h1-->
+				<h1><?php
+
+					switch (Yii::app()->controller->id) {
+						case 'home':
+							echo Yii::t('page', 'screen_home_h1');
+							break;
+						case 'single_deck_vibrating_screen':
+							echo Yii::t('page', 'screen_single_h1');
+							break;
+						case 'double_deck_vibrating_screen':
+							echo Yii::t('page', 'screen_double_h1');
+							break;
+						case 'dewatering_vibrating_screen':
+							echo Yii::t('page', 'screen_dewatering_h1');
+							break;
+						case 'contact':
+							echo Yii::t('page', 'screen_contact_h1');
+							break;
+
+					}
+
+				?></h1>
 
 				<div class="wrapper-mainmenu">
 

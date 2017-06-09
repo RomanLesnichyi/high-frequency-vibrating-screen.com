@@ -6,6 +6,10 @@ class ContactController extends Controller
 
         protected function beforeAction($action)
         {
+            $this->pageTitle = $this->pageTitle = Yii::t('main', 'Грохот вибрационный высокочастотный') . ' - ' . Yii::t('page', 'screen_contact_pageTitle');
+            Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_contact_metaDescription'), 'description');
+            Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_contact_metaKeywords'), 'keywords');
+
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/vs_contact.css');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_map.js");
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/framework/jquery.multifile.js");

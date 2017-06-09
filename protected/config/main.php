@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'TD Prommash',
+	'name'=> Yii::t('page', 'Грохот вибрационный высокочастотный') ,
 	'defaultController' => 'home',
 
 	// preloading 'log' component
@@ -67,6 +67,8 @@ return array(
 			'class'=>'application.components.UrlManager',
             'urlFormat'=>'path',
             'showScriptName'=> false,
+			//'useStrictParsing'=>true,
+			//'urlSuffix'=>'',
             'rules'=>array(
 
 				'<language:(ru|ua|en)>/<controller:\w+>/'=>'<controller>/index',
@@ -114,7 +116,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 
-		'languages'=>array('ru'=>'Русский', 'ua'=>'Украинский', 'en'=>'Английский'),
+		'languages'=>array('en'=>'Английский', 'ru'=>'Русский', 'ua'=>'Украинский',  'by'=>'Белорусский', 'pl'=>'Польский ', 'ro'=>'Румынский', 'rs'=>'Cербский', 'kz'=>'Казахский', ),
 
 		// this is used in contact page
 		'adminEmail'=>'roman.lesnichyi@gmail.com',

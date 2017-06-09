@@ -155,6 +155,7 @@ dl.block-info-contact {
 
     border: 2px solid #dfedf6;
     background-color:#5987e5;
+    text-transform: lowercase;
 }
 
 
