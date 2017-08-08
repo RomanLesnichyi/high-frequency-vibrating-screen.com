@@ -63,8 +63,8 @@
 
 
 .screen-frond  .menu li,  .screen-frond  .menu li>a {
-	font-family: 'magistral_c';
-	font-weight:900;
+	/*font-family: 'magistral_c_bold';*/
+	font-weight: bold;
 	font-size: 20px;
 	color: #fff;
 	text-decoration: none;
@@ -99,8 +99,17 @@ vertical-align:  middle;
 
 
 
+.briefing   a {
+	/*font-family: magistral_c_bold;*/
+	font-weight: bold;
+	/*color:#40143b;*/
+	color:#506273;
+	text-decoration: underline;
+}
+
 .screen-frond  .text > p > a {
-	font-weight:900;
+	/*font-family: magistral_c_bold;*/
+	font-weight: bold;
 	color:#506273;
 	text-decoration: underline;
 }
@@ -198,7 +207,8 @@ height: 100%;
 }
 
 .screen-water-frond  .text > p > a {
-	font-weight:900;
+	/*font-family: magistral_c_bold;*/
+	font-weight: bold;
 	color:#40143b;
 	text-decoration: underline;
 }

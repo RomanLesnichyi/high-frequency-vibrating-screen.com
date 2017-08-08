@@ -71,10 +71,11 @@ return array(
 			//'urlSuffix'=>'',
             'rules'=>array(
 
-				'<language:(ru|ua|en)>/<controller:\w+>/'=>'<controller>/index',
-				'<language:(ru|ua|en)>/<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<language:(ru|ua|en)>/<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
+				'<language:(ru|ua|en|by|pl|ro|rs|kz)>/<controller:\w+>/'=>'<controller>/index',
+				'<language:(ru|ua|en|by|pl|ro|rs|kz)>/<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'<language:(ru|ua|en|by|pl|ro|rs|kz)>/<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				'<language:(ru|ua|en|by|pl|ro|rs|kz)>/<controller:\w+>/<action:\w+>/*'=>'<controller>/<action>',
+
 
 				//'<controller:[\w-]+>/<id:\d+>'=>'<controller>/view',
 				//'<controller:[\w-]+>/<action:[\w-]+>/<id:\d+>'=>'<controller>/<action>',
@@ -116,7 +117,16 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 
-		'languages'=>array('en'=>'Английский', 'ru'=>'Русский', 'ua'=>'Украинский',  'by'=>'Белорусский', 'pl'=>'Польский ', 'ro'=>'Румынский', 'rs'=>'Cербский', 'kz'=>'Казахский', ),
+		'languages'=>array(
+		    'en'=>'Английский',
+            'ru'=>'Русский',
+            'ua'=>'Украинский',
+            'by'=>'Белорусский',
+            'pl'=>'Польский',
+            'ro'=>'Румынский',
+            'rs'=>'Cербский',
+            'kz'=>'Казахский',
+            ),
 
 		// this is used in contact page
 		'adminEmail'=>'roman.lesnichyi@gmail.com',

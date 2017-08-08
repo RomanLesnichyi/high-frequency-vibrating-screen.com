@@ -26,17 +26,22 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_main.css">
 	<?php 	Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . "/css/vs_responsive.css"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_fonts.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/royal_preloader.css">
 
 
 
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.1.1.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vs_functions.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/royal_preloader.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
+<body class="royal_preloader">
+
+<!-- PRELOADER -->
+<div id="royal_preloader"></div>
 
 <div id="" class="container-body row" >
 

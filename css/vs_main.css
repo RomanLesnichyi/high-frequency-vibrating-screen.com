@@ -5,18 +5,37 @@
 	box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
 
+html {
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;;
+	/*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);*/
+	font-smooth: always;
+
+/*
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;*/
+}
+
+
 h1 {
 	font-family: 'compactc';
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 80px;
 	color: #ffffff;
 }
 
 h2 {
 	font-family: 'compactc';
-	font-weight: bold;
-	font-size: 50px;
+	/*font-weight: bold;*/
+	font-size: 46px;
 	color: #506273;
+}
+
+label {
+
 }
 
 body {
@@ -88,9 +107,9 @@ body {
   background-color: #5987e5; /* 1 2 3 4 */
 
   font-family: 'compactc';
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 32px;
   color: #ffffff;
 
 
@@ -182,12 +201,13 @@ body {
 .page-title > div > p {
 	margin: 0 0 0 50px;
 	padding: 0 15px 0 15px;
-	background-color:#fff;  display: inline-block;
+	background-color:#fff;
+	display: inline-block;
 
 	text-align: left;
 	font-family: 'compactc';
-	font-size: 50px;
-	font-weight: bold;
+	font-size: 44px;
+	font-weight: normal;
 	line-height: 1em;
 	color: #40143b;
 }
@@ -222,7 +242,8 @@ div.navbar-header {
 	border-right: 2px solid #304658;
 	background-color:#c2def9;
 	font-family: 'compactc';
-	font-size:28px;
+	/*font-size:21px;*/
+	font-size: 28px;px;
 	color: #304658;
 	text-decoration: none;
 }
@@ -246,9 +267,9 @@ div.navbar-header {
 
 .multi-language  button{
 	background: url('../images/bg_lng_1.png') no-repeat center #5987e5;
-	font-family: 'magistral_c';
-	font-weight:900;
-	font-size: 15px;
+	/*font-family: 'magistral_c_bold';*/
+	font-weight: bold;
+	font-size: 14px;
 	color: #fff;
 	text-decoration: none;
 }
@@ -272,9 +293,9 @@ div.navbar-header {
 
 .multi-language li>a {
 
-	font-family: 'magistral_c';
-	font-weight:900;
-	font-size: 15px;
+	/*font-family: 'magistral_c_bold';*/
+	font-weight: bold;
+	font-size: 18px;
 	color: #304658;
 	text-decoration: none;
 }
@@ -331,6 +352,7 @@ ul.nav-tabs {
 	background-image: url(../images/bg_contact.png);
 	background-color: #f4f6f9;
 	border-bottom: 2px solid #dfedf6;
+	font-weight: normal;
 }
 
 
@@ -342,6 +364,7 @@ ul.nav-tabs {
 	background-color:#fdfeff;
 	border-bottom: 1px solid #fdfeff;
 	color:#29407e;
+
 
 }
 
@@ -395,18 +418,17 @@ ul.nav-stacked {
 	line-height: 1.1em;
 }
 
-.table>thead>tr>th { border-bottom: 2px solid #abb7cd; font-weight:900; color:#abb7cd; text-transform: uppercase;}
+.table>thead>tr>th { border-bottom: 2px solid #abb7cd; /*font-family: magistral_c_bold;*/ font-weight: bold; color:#abb7cd; text-transform: uppercase;}
 .table>tbody>tr>td {border: 0px; color: #708292;}
 .table>tbody>tr>td {text-align: left; }
-.tab-row-even { background-color: #eff5fa; border-top: 2px solid #dfedf6;  font-weight:900;}
-.tab-row-even-fseveral { background-color: #eff5fa; border-top: 2px solid #dfedf6; font-weight:900; }
+.tab-row-even { background-color: #eff5fa; border-top: 2px solid #dfedf6;  /*font-family: magistral_c_bold;*/ font-weight: bold; }
 .tab-row-even-several { background-color: #ecf3f9;   font-size: 90%; color: #708292; border-top: 1px solid #dfedf6;}
 .tab-row-even-several > td {padding: 0px 8px 0px 8px !important; }
 .tab-row-even-several.last >td {padding-bottom: 8px !important;}
-.tab-row-noeven { background-color: #f7fbff; border-top: 2px solid #dfedf6;  font-weight:900;}
+.tab-row-noeven { background-color: #f7fbff; border-top: 2px solid #dfedf6;  font-weight: bold;}
 
 .table>tbody>tr>td.value-text{ text-align: center;  }
-.table>tbody>tr>td:not(:first-child) { font-weight:900;	color: #304658; }
+.table>tbody>tr>td:not(:first-child) { /*font-family: magistral_c_bold;*/ font-weight: bold;	font-size:19px; color: #304658; }
 .table>tbody>tr>td:not(:first-child) > p { margin:0; padding:0; padding-left:40%; }
 
 
@@ -454,7 +476,7 @@ ul.nav-stacked {
 	outline: none;
 	text-shadow: none;
 	-webkit-box-shadow:   none;
-	font-weight: 900;
+	font-weight: bold;
 
 }
 
@@ -511,3 +533,4 @@ ul.nav-stacked {
 	background-size: contain ;
 }
 /********************************/
+

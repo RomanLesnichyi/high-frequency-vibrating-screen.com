@@ -101,6 +101,15 @@
 
 
 
+     Royal_Preloader.config({
+         mode:           'number',
+         showProgress: true,
+         showPercentage: true,
+         background:     '#f4f6f9'
+     });
+
+     ///////////////////////////////////////////////////////////////
+
 
      $(function(){
          var hash = window.location.hash;

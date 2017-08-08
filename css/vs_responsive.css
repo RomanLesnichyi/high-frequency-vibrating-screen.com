@@ -88,7 +88,7 @@
 
 	.nav.menu-lng > li > a, .nav.menu-lng > li > a:hover {
 		background: url('../images/bg_none.gif');
-		font-weight: 900;
+		font-weight: bold;
 		font-size: 15px;
 		color: #304658;
 		text-decoration: none;
@@ -99,7 +99,7 @@
 		width: 100%;
 		border-top: 2px dotted #304658;
 		padding: 10px 10px 0 10px;
-		font-weight: 900;
+		font-weight: bold;
 		color: #fff;
 	}
 
