@@ -1,4 +1,3 @@
-<?php ?>
 <div class="navbar  navbar-fixed-bottom " role="navigation" >
 	<div class="wrapper">
 		<div class="row">
@@ -19,12 +18,22 @@
 <!--                    <li class="active">
 						<a href="<?php /*echo Yii::app()->request->baseUrl; */?>/home" class="section">Главная</a>
 					</li>-->
-					<li class="active"><a href="home" class="section"><?php echo Yii::t('main', 'Главная'); ?></a></li>
+					<li class="<?php  if ( Yii::app()->controller->id == 'home' )  echo 'active'; ?>">
+                        <a href="home" class="section"><?php echo Yii::t('main', 'Главная'); ?></a>
+                    </li>
 
-					<li><a href="single_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот односитный'); ?></a></li>
-                    <li><a href="double_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот двухситный'); ?></a></li>
-                    <li><a href="dewatering_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот обезвожующий'); ?></a></li>
-                    <li><a href="contact" class="section"><?php echo Yii::t('main', 'Контакты'); ?></a></li>
+                    <li class="<?php  if ( Yii::app()->controller->id == 'single_deck_vibrating_screen' )  echo 'active'; ?>">
+                        <a href="single_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот односитный'); ?></a>
+                    </li>
+                    <li class="<?php  if ( Yii::app()->controller->id == 'double_deck_vibrating_screen' )  echo 'active'; ?>">
+                        <a href="double_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот двухситный'); ?></a>
+                    </li>
+                    <li class="<?php  if ( Yii::app()->controller->id == 'dewatering_vibrating_screen' )  echo 'active'; ?>">
+                        <a href="dewatering_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот обезвожующий'); ?></a>
+                    </li>
+                    <li class="<?php  if ( Yii::app()->controller->id == 'contact' )  echo 'active'; ?>">
+                        <a href="contact" class="section"><?php echo Yii::t('main', 'Контакты'); ?></a>
+                    </li>
                 </ul>
 
 				<?php 	$this->widget('application.components.widgets.MultiLanguage');	?>

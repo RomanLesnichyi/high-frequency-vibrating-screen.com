@@ -11,6 +11,7 @@ class HomeController extends Controller
             Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_home_metaKeywords'), 'keywords');
 
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/css/vs_home.css');
+            Yii::app()->getClientScript()->registerCssFile('/css/'.Yii::app()->language.'/vs_multilanguage.css');
             MainHelpers::registerVideoJS();
             return parent::beforeAction($action);
         }

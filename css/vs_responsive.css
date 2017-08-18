@@ -1,3 +1,19 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/***************************************************************/
+	body {
+		background-position: 49.999% 0; /* fixing-safaris-1px-background-image-centering-problem */
+	}
+}
+
+@media (max-width: 1580px) {
+/***************************************************************/
+	body {
+		background: url(../images/bg_body.png) center repeat-y #f4f6f9;
+	}
+}
+
+
+
 @media (max-width: 1023px) { /* 1024x768 iPad, 1024x600 Kindle */
 /***************************************************************/
 	body {
@@ -65,18 +81,19 @@
 
 	.contact-form-submit {
 		font-size: 24px;
+		float: right;
 	}
 
 	.nav.menu-section > li > a {
 		border-right: 0px;
-		font-size: 24px;
+		font-size: 23px;
 	}
 
 
 	.menu-section  {
 		margin-top: 0;
 		margin-bottom: 0;
-		border-top: 2px solid #304658;
+		/*border-top: 2px solid #304658;*/
 	}
 
 	.nav.menu-lng {
@@ -115,7 +132,8 @@
 
 	.screen-frond .text {
 		padding-left: 0px;
-		min-height: 0px
+		min-height: 0px;
+		background: none;
 	}
 
 	.screen-frond .menu ul {
@@ -133,6 +151,12 @@
 
 	.screen-frond .menu li.indent {
 		margin: 0 30px 0 30px;
+	}
+
+	.screen-water-frond {
+		background: url(../images/bg_short_desc2.png) no-repeat calc(100% - 13px) calc(100% - 2px) ,
+		url(../images/bg_2.png) #f5f4ff;
+		padding: 13px 13px 36px 13px;
 	}
 
 	.screen-water-frond > .wrapper {
@@ -155,6 +179,11 @@
 		margin: 13px; /**/
 	}
 
+	.screen-water-frond a.thumbnail {
+		max-width: 640px;
+		max-height: 480px;
+	}
+
 	.post-front-img {
 
 		margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
@@ -169,12 +198,13 @@
 
 @media (max-width: 767px) { /* 768 x 1024 iPad*/ /* iPhone 6 x 750 x 1334 */
 /***************************************************************/
+
 	.block-logo > .row {
 		background: url("../images/bg_none.gif") no-repeat;
 	}
 
-	h1 {
-		font-size: 50px;
+	.block-logo > .row > h1 {
+		font-size: 68px;
 	}
 
 	.block-logo > .row > h1 > p {
@@ -188,6 +218,11 @@
 	.wrapper-mainmenu {
 		max-width: 600px;
 		margin: auto;
+	}
+
+	.wrapper-contact-mini {
+		background: none;
+		padding: 0px 0 66px 0;
 	}
 
 	.block-contact-mini {
@@ -295,6 +330,13 @@
 
 @media (max-width: 639px) { /* 640 x 1136 iPhone 5, 640 x 960 iPhone 4 */
 /***************************************************************/
+	.block-logo > .row > h1 {
+		font-size: 60px;
+	}
+	.block-logo > .row > h1 > p {
+		font-size: 36px;
+	}
+
 	.wrapper-mainmenu {
 		margin: 10px;
 	}
@@ -311,6 +353,17 @@
 
 /***************************************************************/
 @media (max-width: 550px) {
+
+
+
+	.block-logo > .row > h1 {
+		font-size: 50px;
+	}
+	.block-logo > .row > h1 > p {
+		font-size: 30px;
+	}
+
+
 	.post-front-img {
 		width: 100%;
 	}
@@ -370,7 +423,7 @@
 	}
 
 	.block-contact-mini > .ico > div {
-		padding: 15px 20px;
+		padding: 10px 20px;
 	}
 
 

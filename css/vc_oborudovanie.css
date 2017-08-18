@@ -129,32 +129,6 @@ h2.oborudovanie {
 
 /***************************************/
 
-.thumbnail {
-
-    padding: 2px;
-    margin: 5px;
-
-    background-color: #fff;
-   /* background: url(/images/bg_2.png) #f5f4ff;*/
-
-    border: 2px solid #e3ddeb;
-    border-radius: 0px;
-
-}
-
-
-
-
-a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
-    border-color: #40143b;
-    background-color: #e3ddeb;
-}
-
-.thumbnail > img {
-    border: 1px solid #e3ddeb;
-}
-
-/***************************************/
 
 
 

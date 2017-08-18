@@ -38,9 +38,16 @@ label {
 
 }
 
+html {
+	min-width: 320px;
+}
 body {
 
-	background: url(../images/bg_body.png) center repeat-y #f4f6f9;
+
+	background:
+			url(../images/bg_body_2.png)  center top no-repeat ,
+			url(../images/bg_body.png) center repeat-y #f4f6f9;
+
 
 	/* default fone text*/
 	text-align: justify;
@@ -57,12 +64,14 @@ body {
 	/*text-overflow: ellipsis;  ��������� ������ � �����. ���������� � � ����� ����������� ����������.*/
 	font-family: 'magistral_c';
 
+
 }
 
+/* Смещение контента при открытии модального окна Bootstrap 3 */
+body { overflow-y: visible !important; } .modal-open { padding-right: 0 !important; }
 
-.page {
-	padding: 0px 0 0 0 !important;
-}
+
+.page {	padding: 0px 0 0 0 !important; }
 
 .container-body {
 	background-color: #fff;
@@ -181,6 +190,31 @@ body {
 }
 /*********************************/
 
+
+
+
+
+
+.thumbnail {
+	padding: 2px;
+	margin: 5px;
+	background-color: #fff;
+	/* background: url(/images/bg_2.png) #f5f4ff;*/
+	border: 2px solid #e3ddeb;
+	border-radius: 0px;
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+	border-color: #40143b;
+	background-color: #e3ddeb;
+}
+
+.thumbnail > img {
+	border: 1px solid #e3ddeb;
+}
+
+/***************************************/
+
 .main-heading {
 	/*padding-bottom: 20px;*/
 	text-transform:uppercase;
@@ -248,12 +282,15 @@ div.navbar-header {
 	text-decoration: none;
 }
 
-
-.nav.nav.menu-section>li>a:focus, .nav.menu-section>li>a:hover {
+.nav.nav.menu-section>li.active >a {
 	background-color:#29407e;
 	color: #ffffff;
 }
 
+.nav.nav.menu-section>li>a:focus, .nav.menu-section>li>a:hover {
+	background-color:#5770a3;
+	color: #edf5fd;
+}
 
 .multi-language button {
 	width: 42px;
@@ -264,7 +301,6 @@ div.navbar-header {
 	margin-right: 15px;
 }
 
-
 .multi-language  button{
 	background: url('../images/bg_lng_1.png') no-repeat center #5987e5;
 	/*font-family: 'magistral_c_bold';*/
@@ -274,7 +310,9 @@ div.navbar-header {
 	text-decoration: none;
 }
 
-.multi-language button:focus, .multi-language button:hover {
+.multi-language button:focus,
+.multi-language button:hover
+{
 	background: url('../images/bg_lng_2.png') no-repeat center;
 	color: #304658;
 }
@@ -428,7 +466,7 @@ ul.nav-stacked {
 .tab-row-noeven { background-color: #f7fbff; border-top: 2px solid #dfedf6;  font-weight: bold;}
 
 .table>tbody>tr>td.value-text{ text-align: center;  }
-.table>tbody>tr>td:not(:first-child) { /*font-family: magistral_c_bold;*/ font-weight: bold;	font-size:19px; color: #304658; }
+.table>tbody>tr>td:not(:first-child) { /*font-family: magistral_c_bold;*/ font-weight: bold;	font-size:90%; color: #304658; }
 .table>tbody>tr>td:not(:first-child) > p { margin:0; padding:0; padding-left:40%; }
 
 
