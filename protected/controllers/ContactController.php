@@ -11,6 +11,7 @@ class ContactController extends Controller
             Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_contact_metaKeywords'), 'keywords');
 
             Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl.'/css/vs_contact.css');
+            Yii::app()->getClientScript()->registerCssFile('/css/'.Yii::app()->language.'/vs_multilanguage.css');
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_map.js");
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/framework/jquery.multifile.js");
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . "/js/vs_test.js");

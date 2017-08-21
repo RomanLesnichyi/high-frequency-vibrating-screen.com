@@ -203,6 +203,24 @@
 
 }
 
+.video-parent-block-center {
+	display: table;
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+.video-child-block-center {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
 .wrapper-video {
 /*line-height: 400px;*/
 	background-color: transparent;
@@ -216,11 +234,7 @@
 
 }
 
-.parent-block-center {display: table; height: 100% }
-.child-block-center {
-	display: table-cell;
-	vertical-align: middle;
-}
+
 
 .screen-water-frond  .text > p > a {
 	/*font-family: magistral_c_bold;*/

@@ -154,9 +154,14 @@
 	}
 
 	.screen-water-frond {
-		background: url(../images/bg_short_desc2.png) no-repeat calc(100% - 13px) calc(100% - 2px) ,
+
+		background: url(../images/bg_short_desc2.png) no-repeat calc(100% - 13px) calc(100% - 2px)  ,
 		url(../images/bg_2.png) #f5f4ff;
+
+
+
 		padding: 13px 13px 36px 13px;
+
 	}
 
 	.screen-water-frond > .wrapper {
@@ -180,13 +185,27 @@
 	}
 
 	.screen-water-frond a.thumbnail {
+		/*
 		max-width: 640px;
-		max-height: 480px;
+		max-height: 480px;*/
+		width: calc(100% - 10px);
+		height:  calc(100% - 10px);
 	}
 
 	.post-front-img {
 
 		margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+	}
+
+
+
+	.video-parent-block-center {
+		position: static;
+		height: 100%;
+
+	}
+
+	.video-child-block-center {
 	}
 
 
@@ -298,6 +317,10 @@
 
 	}
 
+
+	.wrapper-gallery .desc {
+		display: none;
+	}
 
 	/**********************************/
 
@@ -479,6 +502,14 @@
 	}*/
 
 
+	.screen-water-frond {
+
+		background: url(../images/bg_short_desc2.png) no-repeat calc(100% - 13px) calc(100% - 2px) #f5f4ff;
+		background-size: contain;
+	}
+
+
+
 
 /***************************************************************/
 }/***end @media  479px ***/
@@ -487,8 +518,9 @@
 
 @media (max-width: 319px) { /* 320 x 480 iPhone 3G*/
 /***************************************************************/
-
-
+	div.navbar-header {
+		background-size: 60%;
+	}
 /***************************************************************/
 }/***end @media  319px ***/
 

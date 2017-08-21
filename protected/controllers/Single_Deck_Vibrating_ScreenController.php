@@ -11,6 +11,7 @@ class Single_deck_vibrating_screenController extends Controller
 
         Yii::app()->getClientScript()->registerCssFile('/css/vs_home.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . '/css/vc_oborudovanie.css');
+        Yii::app()->getClientScript()->registerCssFile('/css/'.Yii::app()->language.'/vs_multilanguage.css');
         MainHelpers::registerVideoJS();
         return parent::beforeAction($action);
     }

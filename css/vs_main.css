@@ -39,7 +39,7 @@ label {
 }
 
 html {
-	min-width: 320px;
+	/*min-width: 300px;*/
 }
 body {
 
@@ -277,7 +277,7 @@ div.navbar-header {
 	background-color:#c2def9;
 	font-family: 'compactc';
 	/*font-size:21px;*/
-	font-size: 28px;px;
+	font-size: 28px;
 	color: #304658;
 	text-decoration: none;
 }
@@ -357,7 +357,7 @@ div.navbar-header {
 
 	font-family: 'compactc';
 	font-size: 30px;
-	font-weight: bold;
+	font-weight: normal;
 	line-height: 1em;
 	color: #40143b;
 }
