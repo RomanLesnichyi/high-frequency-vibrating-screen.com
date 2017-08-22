@@ -23,8 +23,8 @@ class FormContact extends CFormModel
     public function attributeLabels()
     {
         return array(
-            'email' => 'e-mail ',
-            'messages' => 'сообщение',
+            'email' => 'email ',
+            'messages' => Yii::t('main', 'сообщение'),
         );
     }
 
