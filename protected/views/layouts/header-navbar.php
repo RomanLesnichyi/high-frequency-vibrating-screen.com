@@ -29,7 +29,7 @@
                         <a href="double_deck_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот двухситный'); ?></a>
                     </li>
                     <li class="<?php  if ( Yii::app()->controller->id == 'dewatering_vibrating_screen' )  echo 'active'; ?>">
-                        <a href="dewatering_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот обезвожующий'); ?></a>
+                        <a href="dewatering_vibrating_screen" class="section"><?php echo Yii::t('main', 'Грохот обезвоживания'); ?></a>
                     </li>
                     <li class="<?php  if ( Yii::app()->controller->id == 'contact' )  echo 'active'; ?>">
                         <a href="contact" class="section"><?php echo Yii::t('main', 'Контакты'); ?></a>

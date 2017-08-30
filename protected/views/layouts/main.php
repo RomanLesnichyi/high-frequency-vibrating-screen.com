@@ -39,7 +39,7 @@
 </head>
 
 <body class="royal_preloader">
-
+<?php include_once("analyticstracking.php") ?>
 <!-- PRELOADER -->
 <div id="royal_preloader"></div>
 

@@ -43,18 +43,19 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 
-		'mail' => array(
-			'class' => 'ext.yii-mail.YiiMail',
-			'transportType'=>'smtp',
-			'transportOptions'=>array(
-				'host'=>'smtp.gmail.com',
-				'username'=>'adm.duplays@gmail.com',
-				'password'=>'Duplays!123',
-
-				'port' => '465',
-				'encryption'=>'tls',
-			),
-			'viewPath' => 'application.views.mail',
+        'mail' => array(
+            'class' => 'ext.yii-mail.YiiMail',
+            'transportType' => 'smtp',
+            'transportOptions'=>array(
+                'host'=>'smtp.gmail.com',
+                'encryption'=>'ssl',
+                'username'=>'amz.prommash@gmail.com',
+                'password'=>'azpm2006azpm2006',
+                'port'=>465,
+            ),
+            'viewPath' => 'application.views.mail',
+            'logging' => true,
+            'dryRun' => false
         ),
 
 		'request'=>array(

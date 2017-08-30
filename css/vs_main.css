@@ -446,12 +446,13 @@ ul.nav-stacked {
 }
 
 /********************************/
-
+.caption,
 .table> caption {
 	font-family: 'compactc';
 	text-align: center;
 	font-size: 30px;
-	color:#29407e;
+	/*color:#29407e;*/
+	color:#5770A3;
 	padding:0;
 	margin: 0px;
 	line-height: 1.1em;

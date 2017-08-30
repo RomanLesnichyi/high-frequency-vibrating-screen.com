@@ -6,7 +6,7 @@ class HomeController extends Controller
 
         protected function beforeAction($action)
         {
-            $this->pageTitle = $this->pageTitle = Yii::t('main', 'Грохот вибрационный высокочастотный') . ' - ' . Yii::t('page', 'screen_home_pageTitle');
+            $this->pageTitle = $this->pageTitle =  Yii::t('page', 'screen_home_pageTitle');
             Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_home_metaDescription'), 'description');
             Yii::app()->clientScript->registerMetaTag( Yii::t('page', 'screen_home_metaKeywords'), 'keywords');
 
