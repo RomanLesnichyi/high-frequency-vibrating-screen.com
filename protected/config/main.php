@@ -42,20 +42,36 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-
+/*
         'mail' => array(
             'class' => 'ext.yii-mail.YiiMail',
             'transportType' => 'smtp',
             'transportOptions'=>array(
                 'host'=>'smtp.gmail.com',
                 'encryption'=>'ssl',
-                'username'=>'amz.prommash@gmail.com',
-                'password'=>'azpm2006azpm2006',
+                'username'=>'xxx@gmail.com',
+                'password'=>'xxx',
                 'port'=>465,
             ),
             'viewPath' => 'application.views.mail',
             'logging' => true,
             'dryRun' => false
+        ),
+*/
+        'mail' => array(
+            'class' => 'ext.yii-mail.YiiMail',
+            'transportType' => 'smtp',
+            'transportOptions'=>array(
+                'host'=>'smtp.gmail.com',
+
+                'username'=>'dp.web.developer@gmail.com',
+                'password'=>'d454gJdf',
+                'port'=>465,
+                'encryption'=>'tls',
+            ),
+            'viewPath' => 'application.views.mail',
+            //'logging' => true,
+            //'dryRun' => false
         ),
 
 		'request'=>array(
@@ -92,7 +108,7 @@ return array(
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
-			'errorAction'=>YII_DEBUG ? null : 'site/error',
+			'errorAction'=>YII_DEBUG ? null : 'home/error',
 			// 'errorAction'=>YII_DEBUG ? null : 'home',
 		),
 
@@ -130,6 +146,6 @@ return array(
             ),
 
 		// this is used in contact page
-		'adminEmail'=>'roman.lesnichyi@gmail.com',
+		'adminEmail'=>'azpm2006@gmail.com',
 	),
 );

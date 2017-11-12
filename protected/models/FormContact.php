@@ -32,14 +32,14 @@ class FormContact extends CFormModel
     {
         $modelEmailMessage = new YiiMailMessage;
         $modelEmailMessage -> view = "tpl_mail_contact";
-        $modelEmailMessage -> subject = 'Mail TD Prommash from < ' . $model->email . ' >';
+        $modelEmailMessage -> subject = 'Письмо отправленно через форму сайта по грохотам  < ' . $model->email . ' >';
         $params = array(
             'email' => $model->email,
             'messages' => $model->messages,
         );
         $modelEmailMessage->setBody($params, 'text/html');
-        $modelEmailMessage->addTo('roman.lesnichyi@gmail.com');
-        $modelEmailMessage->from = 'adm.duplays@gmail.com';
+        $modelEmailMessage->addTo( Yii::app()->params['adminEmail'] );
+        $modelEmailMessage->from = Yii::app()->params['adminEmail'];
 
 
         $lists_files = $model->files_attachment;
