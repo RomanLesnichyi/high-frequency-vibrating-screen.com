@@ -3,7 +3,8 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="language" content="en">
+	<meta name="language" content="ru">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--meta http-equiv="Cache-control" content="no-cache">
 	<meta http-equiv="cache-control" content="max-age=0" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -61,6 +62,8 @@
     <div class="clear"></div>
 
     <div id="footer" class="">
+        <a href="/links.php">Дружественные ресурсы</a>
+
         <?php require_once(  $this->getLayoutFile('header-navbar') ); ?>
     </div><!-- #/footer -->
 
