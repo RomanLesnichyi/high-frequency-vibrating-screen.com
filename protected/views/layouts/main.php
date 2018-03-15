@@ -28,13 +28,13 @@
 	<?php 	Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . "/css/vs_responsive.css"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_fonts.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/royal_preloader.css">
-
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/animate.css">
 
 
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.1.1.min.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vs_functions.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/royal_preloader.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vs_functions.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
@@ -62,8 +62,6 @@
     <div class="clear"></div>
 
     <div id="footer" class="">
-        <a href="/links.php">Дружественные ресурсы</a>
-
         <?php require_once(  $this->getLayoutFile('header-navbar') ); ?>
     </div><!-- #/footer -->
 
