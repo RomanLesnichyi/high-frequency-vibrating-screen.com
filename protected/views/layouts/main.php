@@ -28,12 +28,13 @@
 	<?php 	Yii::app()->clientScript->registerCssFile(Yii::app()->request->baseUrl . "/css/vs_responsive.css"); ?>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vs_fonts.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/royal_preloader.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/animations.css">
 
 
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.1.1.min.js"></script>
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/royal_preloader.js"></script>
+
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vs_functions.js"></script>
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -67,5 +68,6 @@
 
 </div><!-- container-body  -->
 
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/css3-animate-it.js"></script>
 </body>
 </html>

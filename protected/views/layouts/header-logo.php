@@ -29,18 +29,18 @@
 				<div class="wrapper-mainmenu">
 
 
-					<div class="mainmenu">
+					<div class="mainmenu animatedParent">
 					    	<div class="row">
-						          <a href="single_deck_vibrating_screen " class="banner animated" data-effect="pulse"><div class="maxheight ">
+						          <a href="single_deck_vibrating_screen " class="banner animated _slowest" data-effect-mouseenter="bounceIn"><div class="maxheight ">
 						            <div class="ico mm-gvd1"><img src="/images/ico_mm_gvd1.png"></div><?php echo Yii::t('main', 'Односитный'); ?></div>
 						          </a>
-						          <a href="double_deck_vibrating_screen" class="banner animated" data-effect="pulse"><div class="maxheight">
+						          <a href="double_deck_vibrating_screen" class="banner animated _slowest" data-effect-mouseenter="bounceIn"><div class="maxheight">
 						            <div class="ico mm-gvd2"><img src="/images/ico_mm_gvd2.png"></div><?php echo Yii::t('main', 'Двухситный'); ?></div>
 						          </a>
-						          <a href="dewatering_vibrating_screen" class="banner animated" data-effect="pulse"><div class="maxheight1">
+						          <a href="dewatering_vibrating_screen" class="banner animated _slowest" data-effect-mouseenter="bounceIn"><div class="maxheight1">
 						            <div class="ico mm-gvd1m"><img src="/images/ico_mm_gvd1m.png"></div><?php echo Yii::t('main', 'Обезвоживающий'); ?></div>
 						          </a>
-						          <a href="contact" class="banner animated" data-effect="pulse"><div class="maxheight1 ">
+						          <a href="contact" class="banner animated _slowest" data-effect-mouseenter="bounceIn"><div class="maxheight1 ">
 						            <div class="ico mm-contact"><img src="/images/ico_mm_contact.png"></div><?php echo Yii::t('main', 'Контакты'); ?></div>
 						          </a>
 

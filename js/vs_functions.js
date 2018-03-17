@@ -67,19 +67,44 @@
 
      ///////////////////////////////////////////////////////////////
      // анимация  animate.css при наведение
-     function animate(elem){
-         var effect = elem.data("effect");
+     function animateIt(elem,attr_data){
+         var effect = elem.data(attr_data);
          if(!effect || elem.hasClass(effect)) return false;
          elem.addClass(effect);
          setTimeout( function(){
              elem.removeClass(effect);
          }, 1000);
+
      }
      $(".animated").mouseenter(function() {
-         animate($(this));
+         animateIt($(this), 'effect-mouseenter');
      });
 
+     /*$(".animated").ready(function() {
+         animateIt($(this), 'effect-ready');
+     });*/
+
+
+
+
      ///////////////////////////////////////////////////////////////
+
+     Royal_Preloader.config({
+
+         mode:           'number',
+         showProgress: true,
+         showPercentage: true,
+         background:     '#f4f6f9',
+         onComplete: function() {
+             completePreloader ()
+         }
+     });
+
+     function completePreloader( ){
+         $(".animated").each(function() {
+             animateIt($(this), 'effect-ready');
+         });
+     };
 
 
 
@@ -117,13 +142,6 @@
      ///////////////////////////////////////////////////////////////
 
 
-
-     Royal_Preloader.config({
-         mode:           'number',
-         showProgress: true,
-         showPercentage: true,
-         background:     '#f4f6f9'
-     });
 
      ///////////////////////////////////////////////////////////////
 
