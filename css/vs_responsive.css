@@ -219,6 +219,34 @@
 @media (max-width: 767px) { /* 768 x 1024 iPad*/ /* iPhone 6 x 750 x 1334 */
 /***************************************************************/
 
+
+
+		/***********************************************************************************/
+		.animated {
+			/*CSS transitions*/
+			-o-transition-property: none !important;
+			-moz-transition-property: none !important;
+			-ms-transition-property: none !important;
+			-webkit-transition-property: none !important;
+			transition-property: none !important;
+			/*CSS transforms*/
+			-o-transform: none !important;
+			-moz-transform: none !important;
+			-ms-transform: none !important;
+			-webkit-transform: none !important;
+			transform: none !important;
+			/*CSS animations*/
+			-webkit-animation: none !important;
+			-moz-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			/*show*/
+			opacity: 1;
+		}
+		/***********************************************************************************/
+
+
 	.block-logo > .row {
 		background: url("../images/bg_none.gif") no-repeat;
 	}
